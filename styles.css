@@ -324,3 +324,8 @@ main {
     50%{opacity:1;}
     100%{transform: rotateZ(405deg);opacity:0;}
 }
+/* iOS fix */
+.bar, .wrapper,.frame{
+    -webkit-transform: translateZ(0);
+    -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+}
